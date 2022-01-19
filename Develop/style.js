@@ -1,5 +1,5 @@
 const eightBttn = document.getElementById("eightBttn")
-const eightInput = document.getElementById("#eightAM");
+const eightInput = document.getElementById("#eightInput");
 const eightRow = document.getElementById("eightRow")
 const nineRow = document.getElementById("nineRow");
 const tenRow = document.getElementById("tenRow");
@@ -13,6 +13,26 @@ const fiveRow = document.getElementById("fiveRow");
 let timeNow = moment().format("H")
 
 
+saveUserInput = (e) => {
+    e.preventDefault();
+    console.log("clicked")
+    userEightInput = eightInput.value;
+    localStorage.setItem("userInput", userEightInput)
+    console.log(userEightInput)
+}
+
+// eightBttn.click(saveUserInput)
+
+// function saveUserInput () {
+//     let userInput = eightInput.value
+//     localStorage.setItem(userInput, userInput)
+//     console.log(userInput)
+// }
+
+// // let userInput = $("#9am").value
+// // localStorage.setItem("userInput", userInput)
+
+
 // The time -------------------------------------------------
 
 let reformatDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss");
@@ -21,7 +41,7 @@ $("#currentDay").text(reformatDate);
 
 
 
-// Changes the colours depending on time ---------------------
+// Row colours change depending on time ---------------------
 // 8am
 function checkTime() {
   if (timeNow === 8) {
@@ -105,35 +125,8 @@ if (timeNow === 17) {
 } }
 
 
-// currentHour = [8,9,10,11,12,13,14,15,16,17]
-// for (let i = 0; i < currentHour.length; i++) {
-//     const hour = currentHour[i]
-//     if (hour = timeNow) {
-
-//     }
-    
-// }
-
 
 checkTime();
 
-// If the time now is = 8 add .present to
-// else if the time now is
 
-// saveUserInput = (e) => {
-//     console.log("clicked save")
-//     let userInput = eightInput.value;
-//     localStorage.setItem("userInput", userInput)
-//     console.log(userInput)
-// }
 
-// eightBttn.click(saveUserInput)
-
-// function saveUserInput () {
-//     let userInput = eightInput.value
-//     localStorage.setItem(userInput, userInput)
-//     console.log(userInput)
-// }
-
-// // let userInput = $("#9am").value
-// // localStorage.setItem("userInput", userInput)
