@@ -24,8 +24,9 @@
       <thead>
         <tr id="eightRow">
           <th scope="col" style="width: 16.66%" >8am</th>
-          <th scope="col" style="width: 50%"> <form> <input type="text" id="eightInput"></form>
-          <th scope="col" style="width: 16.6%"> <form id="eightBttn" onclick="saveUserInput(event)"><input type="submit"> </form> </th>
+          <th scope="col" style="width: 50%"> 
+            <input type="text" id="eightInput" value="">
+          <th scope="col" style="width: 16.6%"> <button type="button" onclick="store()"> Save </button> </th>
         </tr>
       </thead>
       <tbody>
@@ -75,15 +76,10 @@
           <td><button> Save</button> </th></td>
         </tr>
 
-
-
       </tbody>
     </table>
-
-
-
   </div>
-
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./style.js"></script>
