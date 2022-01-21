@@ -11,18 +11,8 @@ const fourInput = document.getElementById("fourInput")
 const fiveInput = document.getElementById("fiveInput")
 let timeNow = moment().format("H");
 
-// On load, check the time  ---------------------------------
+// On load, check the time and load all the saved text---------------
 checkTime();
-eightTextLoad();
-nineTextLoad();
-tenTextLoad();
-elevenTextLoad();
-twelveTextLoad();
-oneTextLoad();
-twoTextLoad();
-threeTextLoad();
-fourTextLoad();
-fiveTextLoad();
 
 // The time -------------------------------------------------
 let reformatDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss");
@@ -204,5 +194,14 @@ let fiveTextLoad = () => {
     fiveInput.value = fiveLoad;
 }
 
-
+eightTextLoad();
+nineTextLoad();
+tenTextLoad();
+elevenTextLoad();
+twelveTextLoad();
+oneTextLoad();
+twoTextLoad();
+threeTextLoad();
+fourTextLoad();
+fiveTextLoad();
 
