@@ -64,7 +64,7 @@ textarea {
   background-color: #06aed5;
   color: white;
   height: 50px;
-  }
+    }
 
 .saveBtn i:hover {
   font-size: 20px;
@@ -82,3 +82,4 @@ input {
 .hour {
   background-color: white;
 }
+

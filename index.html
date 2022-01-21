@@ -20,80 +20,85 @@
     <p id="currentDay" class="lead"></p>
   </header>
 
-
   <div class="container">
-    <table class="table">
-      <thead>
-        <tr id="eightRow">
-          <th scope="col" style="width: 10%" class="hour" >8am</th>
-          <th scope="col" style="width: 50%">
-            <input type="text" id="eightInput" value="">
-          <th scope="col" style="width: 16.6%"> 
-            <th scope="col" style="width: 16.6%"><button type="button" onclick="eightStore()" class="saveBtn"> Save</button> </th>
-            
-          </th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        <tr id="nineRow">
-          <th scope="row" class="hour">9am</th>
-          <td><input type="text" id="nineInput" value=""> </td>
-          <td><button type="button" onclick="nineStore()"> Save</button> </th>
-          </td>
-        </tr>
-        <tr id="tenRow">
-          <th scope="row" class="hour">10am</th>
-          <td><input type="text" id="tenInput" value=""> </td>
-          <td><button type="button" onclick="tenStore()">Save</button> </th>
-          </td>
-        </tr>
-        <tr id=elevenRow>
-          <th scope="row" class="hour">11am</th>
-          <td><input type="text" id="elevenInput" value=""> </td>
-          <td><button type="button" onclick="elevenStore()">Save</button> </th>
-          </td>
-        </tr>
-        <tr id=twelveRow>
-          <th scope="row"class="hour">12pm</th>
-          <td><input type="text" id="twelveInput" value=""> </td>
-          <td><button type="button" onclick="twelveStore()"> Save</button> </th>
-          </td>
-        </tr>
-        <tr id="oneRow">
-          <th scope="row" class="hour">1pm</th>
-          <td><input type="text" id="oneInput" value=""> </td>
-          <td><button type="button" onclick="oneStore()"> Save</button> </th>
-          </td>
-        </tr>
-        <tr id="twoRow">
-          <th scope="row" class="hour">2pm</th>
-          <td><input type="text" id="twoInput" value=""> </td>
-          <td><button type="button" onclick="twoStore()">Save</button> </th>
-          </td>
-        </tr>
-        <tr id="threeRow">
-          <th scope="row" class="hour">3pm</th>
-          <td><input type="text" id="threeInput" value=""> </td>
-          <td><button type="button" onclick="threeStore()"> Save</button> </th>
-          </td>
-        </tr>
-        <tr id="fourRow">
-          <th scope="row" class="hour">4pm</th>
-          <td><input type="text" id="fourInput" value=""> </td>
-          <td><button type="button" onclick="fourStore()">Save</button> </th>
-          </td>
-        </tr>
-        <tr id="fiveRow">
-          <th scope="row" class="hour">5pm</th>
-          <td><input type="text" id="fiveInput" value=""> </td>
-          <td><button type="button" onclick="fiveStore()"> Save </button> </th>
-          </td>
-        </tr>
 
-      </tbody>
-    </table>
+    <!-- 8am block -->
+    <div id="eightRow" class="row time-block">
+      <div class="col-md-1 hour"> 8AM</div>
+      <textarea class="col-md-10" type="text" id="eightInput" value=""></textarea>
+      <button class="btn saveBtn col-md-1" onclick="eightStore()"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 9am block -->
+    <div id="nineRow" class="row time-block">
+      <div class="col-md-1 hour"> 9AM</div>
+      <textarea class="col-md-10" type="text" id="nineInput" value=""> </textarea>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 10am block -->
+    <div id="tenRow" class="row time-block">
+      <div class="col-md-1 hour"> 10AM </div>
+      <textarea class="col-md-10" type="text" id="tenInput" value=""> </textarea>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+    <!-- 11am block -->
+    <div id="elevenRow" class="row time-block">
+      <div class="col-md-1 hour"> 11AM </div>
+      <textarea class="col-md-10" type="text" id="elevenInput" value=""> </textarea>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+    </div>
+
+      <!-- 12pm block -->
+      <div id="twelveRow" class="row time-block">
+        <div class="col-md-1 hour"> 12PM </div>
+        <textarea class="col-md-10" type="text" id="twelveInput" value=""> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <!-- 1pm block -->
+      <div id="oneRow" class="row time-block">
+        <div class="col-md-1 hour"> 1PM </div>
+        <textarea class="col-md-10" type="text" id="oneInput" value=""> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <!-- 2pm block -->
+      <div id="twoRow" class="row time-block">
+        <div class="col-md-1 hour"> 2PM </div>
+        <textarea class="col-md-10" type="text" id="twoInput" value=""> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+       <!-- 3pm block -->
+       <div id="threeRow" class="row time-block">
+        <div class="col-md-1 hour"> 3PM </div>
+        <textarea class="col-md-10" type="text" id="threeInput" value=""> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+       <!-- 4pm block -->
+       <div id="fourRow" class="row time-block">
+        <div class="col-md-1 hour"> 4PM </div>
+        <textarea class="col-md-10" type="text" id="fourInput" value=""> </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+         <!-- 5pm block -->
+         <div id="fiveRow" class="row time-block">
+          <div class="col-md-1 hour"> 5PM </div>
+          <textarea class="col-md-10" type="text" id="fiveInput" value=""> </textarea>
+          <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+        </div>
   </div>
+
+  <footer>
+    <div class="text-center p-4">
+      Made by JG
+          </div>
+    
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
