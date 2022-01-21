@@ -26,7 +26,8 @@ Click [here](https://jgray33.github.io/work-day-scheduler) to go to my finished 
 
 ### Screenshot
 
-Here is what the final project looks like:
+Here is what the final project looks like:![work-day-scheduler](https://user-images.githubusercontent.com/95051960/150608617-04ba79db-7b99-48ef-917c-42b704910e43.gif)
+
 
 
 ## Links
