@@ -1,30 +1,12 @@
-const eightBttn = document.getElementById("eightBttn")
-// const eightInput = document.getElementById("#eightInput");
-const eightRow = document.getElementById("eightRow")
-const nineRow = document.getElementById("nineRow");
-const tenRow = document.getElementById("tenRow");
-const elevenRow = document.getElementById("elevenRow");
-const twelveRow = document.getElementById("twelveRow");
-const oneRow = document.getElementById("oneRow");
-const twoRow = document.getElementById("twoRow");
-const threeRow = document.getElementById("threeRow");
-const fourRow = document.getElementById("fourRow");
-const fiveRow = document.getElementById("fiveRow");
-let timeNow = moment().format("H")
-console.log(timeNow)
 
+let timeNow =  moment().format("H")
 
+// On load, check the time  ---------------------------------
 checkTime();
 
 
-
-
-
-
 // The time -------------------------------------------------
-
 let reformatDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss");
-console.log(moment());
 $("#currentDay").text(reformatDate);
 
 
@@ -32,83 +14,83 @@ $("#currentDay").text(reformatDate);
 // 8am
 function checkTime() {
   if (timeNow == 8) {
-    eightRow.classList.add("present");
+    $("#eightRow").addClass("present");
   } else if (timeNow > 8) {
-    eightRow.classList.add("past");
+    $("#eightRow").addClass("past");
   } else if (timeNow < 8) {
-    eightRow.classList.add("future");
+    $("#eightRow").addClass("future");
   }
 // 9am
   if (timeNow == 9) {
-      nineRow.classList.add("present");
+      $("#nineRow").addClass("present");
   } else if (timeNow > 9) {
-      nineRow.classList.add("past")
+      $("#nineRow").addClass("past")
   } else if (timeNow < 9) {
-      nineRow.classList.add("future")
+      $("#nineRow").addClass("future")
   }
 // 10am
   if (timeNow == 10) {
-    tenRow.classList.add("present");
+    $("#tenRow").addClass("present");
 } else if (timeNow > 10) {
-    tenRow.classList.add("past")
+    $("#tenRow").addClass("past")
 } else if (timeNow < 10) {
-    tenRow.classList.add("future")
+    $("#tenRow").addClass("future")
 }
 //11am 
 if (timeNow == 11) {
-    elevenRow.classList.add("present");
+    $("#elevenRow").addClass("present");
 } else if (timeNow > 11) {
-    elevenRow.classList.add("past")
+    $("#elevenRow").addClass("past")
 } else if (timeNow < 11) {
-    elevenRow.classList.add("future")
+    $("#elevenRow").addClass("future")
 }
 // 12pm
 if (timeNow == 12) {
-    twelveRow.classList.add("present");
+    $("#twelveRow").addClass("present");
 } else if (timeNow > 12) {
-    twelveRow.classList.add("past")
+    $("#twelveRow").addClass("past")
 } else if (timeNow < 12) {
-    twelveRow.classList.add("future")
+    $("#twelveRow").addClass("future")
 }
 // 1pm
 if (timeNow == 13) {
-    oneRow.classList.add("present");
+    $("#oneRow").addClass("present");
 } else if (timeNow > 13) {
-    oneRow.classList.add("past")
+    $("#oneRow").addClass("past")
 } else if (timeNow < 13) {
-    oneRow.classList.add("future")
+    $("#oneRow").addClass("future")
 }
 // 2pm
 if (timeNow == 14) {
-    twoRow.classList.add("present");
+    $("#twoRow").addClass("present");
 } else if (timeNow > 14) {
-    twoRow.classList.add("past")
+    $("#twoRow").addClass("past")
 } else if (timeNow < 14) {
-    twoRow.classList.add("future")
+    $("#twoRow").addClass("future")
 }
 // 3pm
 if (timeNow == 15) {
-    threeRow.classList.add("present");
+    $("#threeRow").addClass("present");
 } else if (timeNow > 15) {
-    threeRow.classList.add("past")
+    $("#threeRow").addClass("past")
 } else if (timeNow < 15) {
-    threeRow.classList.add("future")
+    $("#threeRow").addClass("future")
 }
 // 4pm
 if (timeNow == 16) {
-    fourRow.classList.add("present");
+    $("#fourRow").addClass("present");
 } else if (timeNow > 16) {
-    fourRow.classList.add("past")
+    $("#fourRow").addClass("past")
 } else if (timeNow < 16) {
-    fourRow.classList.add("future")
+    $("#fourRow").addClass("future")
 }
 // 5pm
 if (timeNow == 17) {
-    fiveRow.classList.add("present");
+    $("#fiveRow").addClass("present");
 } else if (timeNow > 17) {
-    fiveRow.classList.add("past")
+    $("#fiveRow").addClass("past")
 } else if (timeNow < 17) {
-    fiveRow.classList.add("future")
+    $("#fiveRow").addClass("future")
 } }
 
 
