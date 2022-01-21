@@ -15,17 +15,6 @@ console.log(timeNow)
 
 
 checkTime();
-// eightTextLoad();
-
-
-// eightBttn.addEventListener("click", saveInput())
-
-// function saveInput(){
-//     preventDefault()
-//     let userInput = eightInput.value;
-//     console.log(userInput)
-// }
-
 
 
 
@@ -123,16 +112,62 @@ if (timeNow == 17) {
 } }
 
 
-// Storing in local storage ------------------
-function eightStore() {
-    let input = document.getElementById("eightInput")
-    localStorage.setItem("eightAmInput", eightInput.value)
+// Storing in local storage ----------------------------------
+let eightStore = () => {
+        localStorage.setItem("eightInput", eightInput.value)
+}
+
+let nineStore = () => {
+        localStorage.setItem("nineInput", nineInput.value)
+}
+
+let tenStore = () => {
+    localStorage.setItem("tenInput", tenInput.value)
+}
+
+let elevenStore= () => {
+    localStorage.setItem("evelenInput", elevenInput.value)
+}
+
+let twelveStore = () => {
+    localStorage.setItem("twelveInput", twelveInput.value)
+}
+
+let oneStore = () => {
+    localStorage.setItem("oneInput", oneInput.value)
+}
+
+let twoStore = () => {
+    localStorage.setItem("twoStore", twoInput.value)
+}
+
+let threeStore = () => {
+    localStorage.setItem("threeStore", threeInput.value)
+}
+
+let fourStore = () => {
+    localStorage.setItem("fourStore", fourInput.value)
+}
+
+let fiveStore = () => {
+    localStorage.setItem("fiveStore", fiveInput.value)
 }
 
 
+// Retrieving from local storage on ----------------------------
 function eightTextLoad(){
-    let eightload = localStorage.getItem("eightAmInput")
+    let eightload = localStorage.getItem("eightInput")
     document.getElementById("eightInput").value = eightload
 }
 
+let nineText = $("#nineInput")
+console.log(nineText)
+
+let nineTextLoad = () => {
+    let nineLoad = localStorage.getItem("nineInput")
+    nineText.value = nineLoad    
+}
+
+
 eightTextLoad();
+
