@@ -31,6 +31,6 @@ Here is what the final project looks like:
 
 ## Links
 - Repository  https://github.com/jgray33/work-day-scheduler 
-- HTML file 
-- CSS file  
-- JS file
+- HTML file https://github.com/jgray33/work-day-scheduler/blob/main/index.html
+- CSS file  https://github.com/jgray33/work-day-scheduler/blob/main/assets/style.css
+- JS file https://github.com/jgray33/work-day-scheduler/blob/main/assets/style.js 

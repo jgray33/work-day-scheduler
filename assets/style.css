@@ -63,7 +63,8 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
-}
+  height: 50px;
+  }
 
 .saveBtn i:hover {
   font-size: 20px;
@@ -75,5 +76,9 @@ input {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
-  background-color: #eee;
+  background: rgba(0,0,0,0);
+}
+
+.hour {
+  background-color: white;
 }

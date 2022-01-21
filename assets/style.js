@@ -9,7 +9,9 @@ const twoInput = document.getElementById("twoInput")
 const threeInput = document.getElementById("threeInput")
 const fourInput = document.getElementById("fourInput")
 const fiveInput = document.getElementById("fiveInput")
-let timeNow = moment().format("H");
+let timeNow = 8
+
+// moment().format("H");
 
 // On load, check the time and load all the saved text---------------
 checkTime();
