@@ -26,15 +26,9 @@ checkTime();
 //     console.log(userInput)
 // }
 
-function store() {
-    let input = document.getElementById("eightInput")
-    localStorage.setItem("eightAmInput", eightInput.value)
-}
 
-// function eightTextLoad(){
-//     let eightload = localStorage.getItem("eightAmInput")
-//     document.getElementById("eightInput value").textContent = eightload
-// }
+
+
 
 
 
@@ -129,4 +123,16 @@ if (timeNow == 17) {
 } }
 
 
+// Storing in local storage ------------------
+function eightStore() {
+    let input = document.getElementById("eightInput")
+    localStorage.setItem("eightAmInput", eightInput.value)
+}
 
+
+function eightTextLoad(){
+    let eightload = localStorage.getItem("eightAmInput")
+    document.getElementById("eightInput").value = eightload
+}
+
+eightTextLoad();
